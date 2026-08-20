@@ -22,6 +22,16 @@ const browserExecutablePath = '/opt/pw-browsers/chromium';
 
 // Configure environment to trust proxy CA for external resource loads
 process.env.NODE_EXTRA_CA_CERTS = '/root/.ccr/ca-bundle.crt';
+
+// Chromium launch arguments for proxy TLS re-termination support
+const chromiumArgs = [
+  '--ignore-certificate-errors',
+  '--ignore-certificate-errors-spellcheck',
+  '--no-sandbox',
+  '--disable-web-security',
+  '--unsafely-treat-insecure-origin-as-secure=https://fonts.gstatic.com',
+  '--allow-insecure-localhost',
+];
 import https from 'https';
 import fs from 'fs';
 
@@ -82,10 +92,7 @@ for (const shot of manifest) {
     // Pass launch arguments to ignore certificate errors (needed for proxy TLS re-termination)
     puppeteerLaunchConfig: {
       ignoreHTTPSErrors: true,
-      args: [
-        '--ignore-certificate-errors',
-        '--ignore-certificate-errors-spellcheck',
-      ],
+      args: chromiumArgs,
     },
   });
 

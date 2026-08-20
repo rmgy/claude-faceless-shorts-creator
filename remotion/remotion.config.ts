@@ -16,5 +16,7 @@ Config.setChromiumOptions({
     '--ignore-certificate-errors-spellcheck',
     '--no-sandbox',
     '--disable-web-security',
+    '--unsafely-treat-insecure-origin-as-secure=https://fonts.gstatic.com',
+    '--allow-insecure-localhost',
   ],
 });
