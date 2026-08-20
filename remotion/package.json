@@ -10,11 +10,11 @@
     "still": "node scripts/gen-registry.mjs && node scripts/render-all.mjs --still"
   },
   "dependencies": {
-    "@remotion/bundler": "^4.0.486",
-    "@remotion/cli": "^4.0.486",
+    "@remotion/bundler": "^4.0.514",
+    "@remotion/cli": "^4.0.514",
     "@remotion/google-fonts": "^4.0.486",
     "@remotion/paths": "^4.0.486",
-    "@remotion/renderer": "^4.0.486",
+    "@remotion/renderer": "^4.0.514",
     "@remotion/shapes": "^4.0.486",
     "chroma-js": "^3.2.0",
     "lucide-react": "^1.23.0",
