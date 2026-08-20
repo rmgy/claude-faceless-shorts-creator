@@ -1,0 +1,98 @@
+{
+  "id": "vox-2-boundaries",
+  "title": "Boundaries are how she protects her peace",
+  "composition": "Vox2Boundaries",
+  "master": "voice/voice.wav",
+  "format": { "width": 1080, "height": 1920, "fps": 30, "durationSec": 42 },
+  "catalog": "media/library/sfx/catalog.json",
+  "render": {
+    "out": "vox-shorts/vox-2-boundaries/output/vox-2-boundaries-sfx.mp4",
+    "end_s": 42,
+    "duck": true,
+    "duck_amount_db": -6
+  },
+  "events": [
+    {
+      "at_s": 0.5,
+      "sfx_id": "impact-soft",
+      "gain_db": -2,
+      "shot": "intro",
+      "cue": "woman-figure places (frame 15)",
+      "note": "soft thud as central figure anchors the scene"
+    },
+    {
+      "at_s": 3.2,
+      "sfx_id": "pop-reveal",
+      "gain_db": 1,
+      "shot": "intro",
+      "cue": "on word 'peace' title reinforces",
+      "note": "gentle pop as key concept appears"
+    },
+    {
+      "at_s": 5.0,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -3,
+      "shot": "metaphor",
+      "cue": "gate-left slides in (frame 150)",
+      "note": "paper-like whoosh for die-cut entrance"
+    },
+    {
+      "at_s": 5.24,
+      "sfx_id": "pop-reveal",
+      "gain_db": 0,
+      "shot": "metaphor",
+      "cue": "on word 'walls' (5.29s)",
+      "note": "pop on the contrast word"
+    },
+    {
+      "at_s": 7.0,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -3,
+      "shot": "metaphor",
+      "cue": "gate-right slides in (frame 210)",
+      "note": "second gate entrance mirrors first"
+    },
+    {
+      "at_s": 7.46,
+      "sfx_id": "ui-click-soft",
+      "gain_db": 2,
+      "optional": true,
+      "shot": "metaphor",
+      "cue": "on word 'gates' label chip places",
+      "note": "textural click as annotation enters"
+    },
+    {
+      "at_s": 12.5,
+      "sfx_id": "riser-soft",
+      "gain_db": 0,
+      "shot": "realization",
+      "cue": "light-rays begin to rise (frame 375)",
+      "note": "subtle tension as enlightenment appears"
+    },
+    {
+      "at_s": 13.24,
+      "sfx_id": "pop-reveal",
+      "gain_db": 2,
+      "shot": "realization",
+      "cue": "on word 'inside' (13.24s)",
+      "note": "pop on the personal realization"
+    },
+    {
+      "at_s": 20.0,
+      "sfx_id": "riser-soft",
+      "gain_db": -1,
+      "shot": "reinforcement",
+      "cue": "camera begins subtle movement (frame 600)",
+      "note": "gentle rise as themes return"
+    },
+    {
+      "at_s": 20.8,
+      "sfx_id": "pop-reveal",
+      "gain_db": 1,
+      "shot": "reinforcement",
+      "cue": "on word 'Boundaries' (20.8s) title repeats",
+      "note": "reinforcement pop closes the arc"
+    }
+  ],
+  "notes": "Collage aesthetic: paper/cutout foley (whooshes), soft impacts on figure placement, pops on text reveals. Two moments layered (riser+pop at 12.5s/13.24s and 20.0s/20.8s). All SFX sit well under voice. Optional chip-click can be removed for cleaner mix."
+}

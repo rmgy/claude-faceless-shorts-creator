@@ -1,0 +1,123 @@
+{
+  "id": "vox-6-survival",
+  "title": "People treat you the way they've learned to survive",
+  "composition": "Vox6Survival",
+  "master": "voice/voice.wav",
+  "format": { "width": 1080, "height": 1920, "fps": 30, "durationSec": 40 },
+  "catalog": "media/library/sfx/catalog.json",
+  "render": {
+    "out": "vox-shorts/vox-6-survival/output/vox-6-survival-sfx.mp4",
+    "end_s": 40,
+    "duck": true,
+    "duck_amount_db": -6
+  },
+  "events": [
+    {
+      "at_s": 0.5,
+      "sfx_id": "impact-soft",
+      "gain_db": -2,
+      "shot": "intro",
+      "cue": "central-figure places (frame 15)",
+      "note": "soft thud anchoring the protagonist"
+    },
+    {
+      "at_s": 4.45,
+      "sfx_id": "pop-reveal",
+      "gain_db": 1,
+      "shot": "intro",
+      "cue": "on word 'survive' (4.45s) opening statement",
+      "note": "pop as theme is stated"
+    },
+    {
+      "at_s": 5.0,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -3,
+      "shot": "patterns",
+      "cue": "figure-variant-1 slides left (frame 150)",
+      "note": "left-side whoosh for first variant"
+    },
+    {
+      "at_s": 5.3,
+      "sfx_id": "whoosh-wind",
+      "gain_db": -2,
+      "shot": "patterns",
+      "cue": "figure-variant-2 slides right (frame 159)",
+      "note": "matching whoosh on opposite side shows mirroring patterns"
+    },
+    {
+      "at_s": 6.0,
+      "sfx_id": "ui-click-soft",
+      "gain_db": 2,
+      "optional": true,
+      "shot": "patterns",
+      "cue": "first label-chip places (frame 180)",
+      "note": "click for first annotation"
+    },
+    {
+      "at_s": 6.7,
+      "sfx_id": "ui-click-soft",
+      "gain_db": 2,
+      "optional": true,
+      "shot": "patterns",
+      "cue": "second label-chip places (frame 201)",
+      "note": "second click adds rhythm to pattern reveal"
+    },
+    {
+      "at_s": 12.0,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -2,
+      "shot": "contexts",
+      "cue": "survival-context-1 rises (frame 360)",
+      "note": "whoosh as first contextual layer appears"
+    },
+    {
+      "at_s": 12.3,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -2,
+      "shot": "contexts",
+      "cue": "survival-context-2 rises (frame 369)",
+      "note": "parallel whoosh as second context joins"
+    },
+    {
+      "at_s": 13.2,
+      "sfx_id": "pop-reveal",
+      "gain_db": 2,
+      "shot": "contexts",
+      "cue": "on word 'adaptive' (13.2s) understanding builds",
+      "note": "pop as key insight appears"
+    },
+    {
+      "at_s": 20.0,
+      "sfx_id": "riser-soft",
+      "gain_db": 1,
+      "shot": "realization",
+      "cue": "protection-gestures fade in (frame 600)",
+      "note": "gentle rise before the pivot moment"
+    },
+    {
+      "at_s": 24.45,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": 2,
+      "shot": "realization",
+      "cue": "on word 'you' (24.45s) 'It is NOT about you' hero moment",
+      "note": "deep impact emphasizes the turning point - primary hero cue"
+    },
+    {
+      "at_s": 28.0,
+      "sfx_id": "riser-soft",
+      "gain_db": 0,
+      "shot": "integration",
+      "cue": "final statement prepares (frame 840)",
+      "note": "rise builds to the integration of understanding"
+    },
+    {
+      "at_s": 28.45,
+      "sfx_id": "pop-reveal",
+      "gain_db": 3,
+      "shot": "integration",
+      "cue": "on word 'survival' (28.45s) 'It is about THEIR survival' closes",
+      "note": "strong pop as compassion-shift completes - secondary hero cue"
+    }
+  ],
+  "notes": "Pattern/behavior recognition theme: symmetric whooshes for variant figures (5.0s left + 5.3s right), context whooshes as circumstances appear (12.0s + 12.3s), multiple clicks for pattern rhythm (6.0s + 6.7s). Two hero moments: 24.45s impact-deep (pivot point 'NOT about you'), 28.45s strong pop (integration 'THEIR survival'). Rise at 20.0s prepares for realization, completes arc. All under voice with sensitive duck. Optional clicks can be removed for minimalist version."
+}

@@ -1,0 +1,125 @@
+{
+  "id": "vox-5-feelings",
+  "title": "Feelings fade when felt fully",
+  "composition": "Vox5Feelings",
+  "master": "voice/voice.wav",
+  "format": { "width": 1080, "height": 1920, "fps": 30, "durationSec": 42 },
+  "catalog": "media/library/sfx/catalog.json",
+  "render": {
+    "out": "vox-shorts/vox-5-feelings/output/vox-5-feelings-sfx.mp4",
+    "end_s": 42,
+    "duck": true,
+    "duck_amount_db": -6
+  },
+  "events": [
+    {
+      "at_s": 0.5,
+      "sfx_id": "pop-reveal",
+      "gain_db": 1,
+      "optional": true,
+      "shot": "intro",
+      "cue": "on word 'fade' (0.5s) title appears",
+      "note": "gentle pop as thesis lands"
+    },
+    {
+      "at_s": 5.0,
+      "sfx_id": "impact-soft",
+      "gain_db": -1,
+      "shot": "storm",
+      "cue": "woman-figure places (frame 150)",
+      "note": "soft thud grounding the emotional center"
+    },
+    {
+      "at_s": 5.3,
+      "sfx_id": "riser-soft",
+      "gain_db": 1,
+      "shot": "storm",
+      "cue": "storm-elements rise (frame 159)",
+      "note": "rise builds emotional tension - first of two-layer moment"
+    },
+    {
+      "at_s": 5.5,
+      "sfx_id": "whoosh-wind",
+      "gain_db": -2,
+      "shot": "storm",
+      "cue": "storm-elements settle (frame 165)",
+      "note": "wind whoosh as turbulence arrives - completes layer"
+    },
+    {
+      "at_s": 6.0,
+      "sfx_id": "ui-click-soft",
+      "gain_db": 1,
+      "optional": true,
+      "shot": "storm",
+      "cue": "label-chip places (frame 180)",
+      "note": "click adds tactile quality to narration"
+    },
+    {
+      "at_s": 12.5,
+      "sfx_id": "impact-soft",
+      "gain_db": 0,
+      "shot": "barriers",
+      "cue": "wall-barriers place (frame 375)",
+      "note": "impact as emotional containment manifests"
+    },
+    {
+      "at_s": 13.06,
+      "sfx_id": "pop-reveal",
+      "gain_db": 2,
+      "shot": "barriers",
+      "cue": "on word 'name' (13.06s) key realization",
+      "note": "pop on the turning point - hero moment"
+    },
+    {
+      "at_s": 20.0,
+      "sfx_id": "whoosh-wind",
+      "gain_db": -1,
+      "shot": "water",
+      "cue": "flowing-water rises (frame 600)",
+      "note": "wind whoosh represents flow/release - first of two layers"
+    },
+    {
+      "at_s": 20.3,
+      "sfx_id": "riser-soft",
+      "gain_db": 1,
+      "shot": "water",
+      "cue": "water animation settles (frame 609)",
+      "note": "rise continues tension resolution - second layer completes"
+    },
+    {
+      "at_s": 20.5,
+      "sfx_id": "pop-reveal",
+      "gain_db": 1,
+      "optional": true,
+      "shot": "water",
+      "cue": "on word 'eventually' (20.5s)",
+      "note": "optional pop for gentle emphasis"
+    },
+    {
+      "at_s": 26.5,
+      "sfx_id": "chime-magic",
+      "gain_db": 0,
+      "shot": "light",
+      "cue": "light-rays appear (frame 795)",
+      "note": "magic chime as peace breaks through - reward moment"
+    },
+    {
+      "at_s": 32.5,
+      "sfx_id": "pop-reveal",
+      "gain_db": 1,
+      "shot": "resolution",
+      "cue": "on word 'fully' (32.5s) full circle closes",
+      "note": "final pop confirms transformation"
+    },
+    {
+      "at_s": 36.0,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -4,
+      "optional": true,
+      "shot": "sky",
+      "cue": "sky clears/fades (frame 1080)",
+      "note": "optional subtle whoosh as final image settles"
+    }
+  ],
+  "notes": "Emotional journey theme: storm creates tension (5.3s rise → 5.5s wind whoosh), barriers manifest (impact at 12.5s, pop at 13.06s crisis point), water/release flows (20.0s whoosh → 20.3s rise completes second build), light breaks through (26.5s chime-magic reward moment), resolution confirms (32.5s pop). Three major layered moments build emotional arc. All under voice with sensitive duck. Optional textures enhance without overwhelming."
+}
