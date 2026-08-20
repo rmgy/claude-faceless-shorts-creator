@@ -1,0 +1,44 @@
+{
+  "id": "vox-2-boundaries",
+  "title": "Boundaries are how she protects her peace",
+  "composition": "Vox2Boundaries",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 42
+  },
+  "voicePlan": "kokoro:af",
+  "vo": [
+    {
+      "beat": "intro",
+      "text": "Boundaries are how she protects her peace.",
+      "start": 0.5,
+      "end": 5.0
+    },
+    {
+      "beat": "metaphor",
+      "text": "Not walls against the world. But gates that she opens only in the direction she chooses.",
+      "start": 5.0,
+      "end": 12.5
+    },
+    {
+      "beat": "realization",
+      "text": "The peace inside did not arrive by accident.",
+      "start": 12.5,
+      "end": 18.0
+    },
+    {
+      "beat": "reinforcement",
+      "text": "Boundaries are how she protects her peace.",
+      "start": 20.0,
+      "end": 24.5
+    },
+    {
+      "beat": "loop",
+      "text": "",
+      "start": 24.5,
+      "end": 42.0
+    }
+  ]
+}

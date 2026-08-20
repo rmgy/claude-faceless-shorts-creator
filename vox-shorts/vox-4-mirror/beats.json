@@ -1,0 +1,44 @@
+{
+  "id": "vox-4-mirror",
+  "title": "Every relationship is a mirror",
+  "composition": "Vox4Mirror",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 40
+  },
+  "voicePlan": "kokoro:af",
+  "vo": [
+    {
+      "beat": "intro",
+      "text": "Every relationship is a mirror.",
+      "start": 0.5,
+      "end": 5.0
+    },
+    {
+      "beat": "reflection",
+      "text": "What you find in others often echoes something you carry inside.",
+      "start": 5.0,
+      "end": 12.0
+    },
+    {
+      "beat": "multiplicity",
+      "text": "The irritant, the humor, the depth.",
+      "start": 12.0,
+      "end": 18.0
+    },
+    {
+      "beat": "realization",
+      "text": "Every relationship is a mirror.",
+      "start": 20.0,
+      "end": 25.0
+    },
+    {
+      "beat": "loop",
+      "text": "",
+      "start": 25.0,
+      "end": 40.0
+    }
+  ]
+}

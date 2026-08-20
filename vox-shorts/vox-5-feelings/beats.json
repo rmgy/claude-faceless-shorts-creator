@@ -1,0 +1,44 @@
+{
+  "id": "vox-5-feelings",
+  "title": "Feelings fade when felt fully",
+  "composition": "Vox5Feelings",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 42
+  },
+  "voicePlan": "kokoro:af",
+  "vo": [
+    {
+      "beat": "intro",
+      "text": "Feelings fade when felt fully.",
+      "start": 0.5,
+      "end": 5.0
+    },
+    {
+      "beat": "storm",
+      "text": "The storm that is allowed to pass does not linger in the walls.",
+      "start": 5.0,
+      "end": 12.5
+    },
+    {
+      "beat": "suppression",
+      "text": "Only the ones we name and know can eventually move through us.",
+      "start": 12.5,
+      "end": 20.0
+    },
+    {
+      "beat": "release",
+      "text": "",
+      "start": 20.0,
+      "end": 30.0
+    },
+    {
+      "beat": "peace",
+      "text": "",
+      "start": 30.0,
+      "end": 42.0
+    }
+  ]
+}

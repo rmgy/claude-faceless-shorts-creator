@@ -1,0 +1,50 @@
+{
+  "id": "vox-6-survival",
+  "title": "People treat you the way they've learned to survive",
+  "composition": "Vox6Survival",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 40
+  },
+  "voicePlan": "kokoro:af",
+  "vo": [
+    {
+      "beat": "intro",
+      "text": "People treat you the way they've learned to survive.",
+      "start": 0.5,
+      "end": 5.0
+    },
+    {
+      "beat": "patterns",
+      "text": "Not always with intention. Not always with awareness.",
+      "start": 5.0,
+      "end": 12.0
+    },
+    {
+      "beat": "adaptation",
+      "text": "But the behavior that persists is almost always adaptive.",
+      "start": 12.0,
+      "end": 19.0
+    },
+    {
+      "beat": "reframing",
+      "text": "It is not about you.",
+      "start": 20.0,
+      "end": 24.5
+    },
+    {
+      "beat": "integration",
+      "text": "It is about their survival.",
+      "start": 24.5,
+      "end": 28.0
+    },
+    {
+      "beat": "close",
+      "text": "",
+      "start": 28.0,
+      "end": 40.0
+    }
+  ]
+}

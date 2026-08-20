@@ -1,0 +1,44 @@
+{
+  "id": "vox-3-empire",
+  "title": "Her boundaries built her empire",
+  "composition": "Vox3Empire",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 38
+  },
+  "voicePlan": "kokoro:af",
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "Her boundaries built her empire.",
+      "start": 0.5,
+      "end": 4.0
+    },
+    {
+      "beat": "foundation",
+      "text": "The wall is not the building. But without it, nothing stands.",
+      "start": 4.0,
+      "end": 10.5
+    },
+    {
+      "beat": "construction",
+      "text": "The no that held the line freed the space where everything was eventually constructed.",
+      "start": 10.5,
+      "end": 18.5
+    },
+    {
+      "beat": "empire",
+      "text": "",
+      "start": 18.5,
+      "end": 28.0
+    },
+    {
+      "beat": "loop",
+      "text": "",
+      "start": 28.0,
+      "end": 38.0
+    }
+  ]
+}
