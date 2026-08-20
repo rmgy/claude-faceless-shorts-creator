@@ -14,31 +14,190 @@
       "beat": "hook",
       "text": "Her boundaries built her empire.",
       "start": 0.5,
-      "end": 4.0
+      "end": 1.0,
+      "words": [
+        {
+          "w": "Her",
+          "start": 0.5,
+          "end": 0.74
+        },
+        {
+          "w": "boundaries",
+          "start": 0.79,
+          "end": 1.59
+        },
+        {
+          "w": "built",
+          "start": 1.64,
+          "end": 2.04
+        },
+        {
+          "w": "her",
+          "start": 2.09,
+          "end": 2.33
+        },
+        {
+          "w": "empire.",
+          "start": 2.38,
+          "end": 2.94
+        }
+      ]
     },
     {
       "beat": "foundation",
       "text": "The wall is not the building. But without it, nothing stands.",
       "start": 4.0,
-      "end": 10.5
+      "end": 4.5,
+      "words": [
+        {
+          "w": "The",
+          "start": 4.0,
+          "end": 4.24
+        },
+        {
+          "w": "wall",
+          "start": 4.29,
+          "end": 4.61
+        },
+        {
+          "w": "is",
+          "start": 4.66,
+          "end": 4.86
+        },
+        {
+          "w": "not",
+          "start": 4.91,
+          "end": 5.15
+        },
+        {
+          "w": "the",
+          "start": 5.2,
+          "end": 5.44
+        },
+        {
+          "w": "building.",
+          "start": 5.49,
+          "end": 6.21
+        },
+        {
+          "w": "But",
+          "start": 6.26,
+          "end": 6.5
+        },
+        {
+          "w": "without",
+          "start": 6.55,
+          "end": 7.11
+        },
+        {
+          "w": "it,",
+          "start": 7.16,
+          "end": 7.4
+        },
+        {
+          "w": "nothing",
+          "start": 7.45,
+          "end": 8.01
+        },
+        {
+          "w": "stands.",
+          "start": 8.06,
+          "end": 8.62
+        }
+      ]
     },
     {
       "beat": "construction",
       "text": "The no that held the line freed the space where everything was eventually constructed.",
       "start": 10.5,
-      "end": 18.5
+      "end": 11.0,
+      "words": [
+        {
+          "w": "The",
+          "start": 10.5,
+          "end": 10.74
+        },
+        {
+          "w": "no",
+          "start": 10.79,
+          "end": 10.99
+        },
+        {
+          "w": "that",
+          "start": 11.04,
+          "end": 11.36
+        },
+        {
+          "w": "held",
+          "start": 11.41,
+          "end": 11.73
+        },
+        {
+          "w": "the",
+          "start": 11.78,
+          "end": 12.02
+        },
+        {
+          "w": "line",
+          "start": 12.07,
+          "end": 12.39
+        },
+        {
+          "w": "freed",
+          "start": 12.44,
+          "end": 12.84
+        },
+        {
+          "w": "the",
+          "start": 12.89,
+          "end": 13.13
+        },
+        {
+          "w": "space",
+          "start": 13.18,
+          "end": 13.58
+        },
+        {
+          "w": "where",
+          "start": 13.63,
+          "end": 14.03
+        },
+        {
+          "w": "everything",
+          "start": 14.08,
+          "end": 14.88
+        },
+        {
+          "w": "was",
+          "start": 14.93,
+          "end": 15.17
+        },
+        {
+          "w": "eventually",
+          "start": 15.22,
+          "end": 16.02
+        },
+        {
+          "w": "constructed.",
+          "start": 16.07,
+          "end": 17.03
+        }
+      ]
     },
     {
       "beat": "empire",
       "text": "",
       "start": 18.5,
-      "end": 28.0
+      "end": 19.0,
+      "words": []
     },
     {
       "beat": "loop",
       "text": "",
       "start": 28.0,
-      "end": 38.0
+      "end": 28.5,
+      "words": []
     }
-  ]
+  ],
+  "voiceStatus": "kokoro-local:af"
 }

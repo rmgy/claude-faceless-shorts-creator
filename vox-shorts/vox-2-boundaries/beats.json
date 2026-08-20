@@ -14,31 +14,231 @@
       "beat": "intro",
       "text": "Boundaries are how she protects her peace.",
       "start": 0.5,
-      "end": 5.0
+      "end": 1.0,
+      "words": [
+        {
+          "w": "Boundaries",
+          "start": 0.5,
+          "end": 1.3
+        },
+        {
+          "w": "are",
+          "start": 1.35,
+          "end": 1.59
+        },
+        {
+          "w": "how",
+          "start": 1.64,
+          "end": 1.88
+        },
+        {
+          "w": "she",
+          "start": 1.93,
+          "end": 2.17
+        },
+        {
+          "w": "protects",
+          "start": 2.22,
+          "end": 2.86
+        },
+        {
+          "w": "her",
+          "start": 2.91,
+          "end": 3.15
+        },
+        {
+          "w": "peace.",
+          "start": 3.2,
+          "end": 3.68
+        }
+      ]
     },
     {
       "beat": "metaphor",
       "text": "Not walls against the world. But gates that she opens only in the direction she chooses.",
       "start": 5.0,
-      "end": 12.5
+      "end": 5.5,
+      "words": [
+        {
+          "w": "Not",
+          "start": 5.0,
+          "end": 5.24
+        },
+        {
+          "w": "walls",
+          "start": 5.29,
+          "end": 5.69
+        },
+        {
+          "w": "against",
+          "start": 5.74,
+          "end": 6.3
+        },
+        {
+          "w": "the",
+          "start": 6.35,
+          "end": 6.59
+        },
+        {
+          "w": "world.",
+          "start": 6.64,
+          "end": 7.12
+        },
+        {
+          "w": "But",
+          "start": 7.17,
+          "end": 7.41
+        },
+        {
+          "w": "gates",
+          "start": 7.46,
+          "end": 7.86
+        },
+        {
+          "w": "that",
+          "start": 7.91,
+          "end": 8.23
+        },
+        {
+          "w": "she",
+          "start": 8.28,
+          "end": 8.52
+        },
+        {
+          "w": "opens",
+          "start": 8.57,
+          "end": 8.97
+        },
+        {
+          "w": "only",
+          "start": 9.02,
+          "end": 9.34
+        },
+        {
+          "w": "in",
+          "start": 9.39,
+          "end": 9.59
+        },
+        {
+          "w": "the",
+          "start": 9.64,
+          "end": 9.88
+        },
+        {
+          "w": "direction",
+          "start": 9.93,
+          "end": 10.65
+        },
+        {
+          "w": "she",
+          "start": 10.7,
+          "end": 10.94
+        },
+        {
+          "w": "chooses.",
+          "start": 10.99,
+          "end": 11.63
+        }
+      ]
     },
     {
       "beat": "realization",
       "text": "The peace inside did not arrive by accident.",
       "start": 12.5,
-      "end": 18.0
+      "end": 13.0,
+      "words": [
+        {
+          "w": "The",
+          "start": 12.5,
+          "end": 12.74
+        },
+        {
+          "w": "peace",
+          "start": 12.79,
+          "end": 13.19
+        },
+        {
+          "w": "inside",
+          "start": 13.24,
+          "end": 13.72
+        },
+        {
+          "w": "did",
+          "start": 13.77,
+          "end": 14.01
+        },
+        {
+          "w": "not",
+          "start": 14.06,
+          "end": 14.3
+        },
+        {
+          "w": "arrive",
+          "start": 14.35,
+          "end": 14.83
+        },
+        {
+          "w": "by",
+          "start": 14.88,
+          "end": 15.08
+        },
+        {
+          "w": "accident.",
+          "start": 15.13,
+          "end": 15.85
+        }
+      ]
     },
     {
       "beat": "reinforcement",
       "text": "Boundaries are how she protects her peace.",
       "start": 20.0,
-      "end": 24.5
+      "end": 20.5,
+      "words": [
+        {
+          "w": "Boundaries",
+          "start": 20.0,
+          "end": 20.8
+        },
+        {
+          "w": "are",
+          "start": 20.85,
+          "end": 21.09
+        },
+        {
+          "w": "how",
+          "start": 21.14,
+          "end": 21.38
+        },
+        {
+          "w": "she",
+          "start": 21.43,
+          "end": 21.67
+        },
+        {
+          "w": "protects",
+          "start": 21.72,
+          "end": 22.36
+        },
+        {
+          "w": "her",
+          "start": 22.41,
+          "end": 22.65
+        },
+        {
+          "w": "peace.",
+          "start": 22.7,
+          "end": 23.18
+        }
+      ]
     },
     {
       "beat": "loop",
       "text": "",
       "start": 24.5,
-      "end": 42.0
+      "end": 25.0,
+      "words": []
     }
-  ]
+  ],
+  "voiceStatus": "kokoro-local:af"
 }
