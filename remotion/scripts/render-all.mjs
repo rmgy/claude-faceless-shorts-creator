@@ -17,57 +17,6 @@ const scaleArg = args.find((a) => a.startsWith('--scale='));
 const SCALE = scaleArg ? Number(scaleArg.split('=')[1]) : 2;
 const onlyIds = args.filter((a) => !a.startsWith('--'));
 
-// Use pre-installed Chromium from Playwright to avoid downloading
-const browserExecutablePath = '/opt/pw-browsers/chromium';
-
-// Configure environment to trust proxy CA for external resource loads
-process.env.NODE_EXTRA_CA_CERTS = '/root/.ccr/ca-bundle.crt';
-
-// Chromium launch arguments for proxy TLS re-termination support
-const chromiumArgs = [
-  '--ignore-certificate-errors',
-  '--ignore-certificate-errors-spellcheck',
-  '--no-sandbox',
-  '--disable-web-security',
-  '--unsafely-treat-insecure-origin-as-secure=https://fonts.gstatic.com',
-  '--allow-insecure-localhost',
-];
-import https from 'https';
-import fs from 'fs';
-
-// Manual browser download function that avoids Remotion's buggy download code
-async function downloadBrowserManually(version, platform, archivePath) {
-  const url = `https://storage.googleapis.com/chrome-for-testing-public/${version}/${platform}/chrome-headless-shell-${platform}.zip`;
-
-  return new Promise((resolve, reject) => {
-    console.log(`Downloading ${url}...`);
-    const file = fs.createWriteStream(archivePath);
-
-    https.get(url, (response) => {
-      if (response.statusCode !== 200) {
-        reject(new Error(`Failed to download: ${response.statusCode}`));
-        return;
-      }
-
-      const totalSize = parseInt(response.headers['content-length'], 10);
-      let downloadedSize = 0;
-
-      response.on('data', (chunk) => {
-        downloadedSize += chunk.length;
-        const percent = Math.round((downloadedSize / totalSize) * 100);
-        process.stdout.write(`\rProgress: ${percent}%`);
-      });
-
-      response.pipe(file);
-      file.on('finish', () => {
-        file.close();
-        console.log('\nDownload complete');
-        resolve();
-      });
-    }).on('error', reject);
-  });
-}
-
 const manifest = JSON.parse(readFileSync(path.join(root, 'src', 'shots.manifest.json'), 'utf8'));
 const outDir = path.join(root, 'out');
 mkdirSync(outDir, { recursive: true });
@@ -80,41 +29,21 @@ const serveUrl = await bundle({ entryPoint: path.join(root, 'src', 'index.ts'), 
 let n = 0;
 for (const shot of manifest) {
   if (onlyIds.length && !onlyIds.includes(shot.id)) continue;
-  // Custom browser download handler to work around proxy blocks and Remotion bugs
-  const composition = await selectComposition({
-    serveUrl,
-    id: shot.id,
-    browserExecutablePath,
-    onBrowserDownload: async (params) => {
-      // Just return and let browserExecutablePath be used
-      return;
-    },
-    // Pass launch arguments to ignore certificate errors (needed for proxy TLS re-termination)
-    puppeteerLaunchConfig: {
-      ignoreHTTPSErrors: true,
-      args: chromiumArgs,
-    },
-  });
+  const composition = await selectComposition({ serveUrl, id: shot.id });
 
   if (stillMode) {
     const out = path.join(outDir, `${shot.id}.png`);
     await renderStill({
-      serveUrl, composition, output: out, scale: SCALE, overwrite: true, browserExecutablePath,
+      serveUrl, composition, output: out, scale: SCALE, overwrite: true,
       frame: Math.floor(composition.durationInFrames * 0.6),
       imageFormat: shot.transparent ? 'png' : 'jpeg',
-      puppeteerInstance: {
-        ignoreHTTPSErrors: true,
-      },
     });
     console.log('  still ->', path.relative(root, out));
   } else {
     const transparent = !!shot.transparent;
     const out = path.join(outDir, `${shot.id}.${transparent ? 'mov' : 'mp4'}`);
     await renderMedia({
-      serveUrl, composition, outputLocation: out, scale: SCALE, overwrite: true, browserExecutablePath,
-      puppeteerInstance: {
-        ignoreHTTPSErrors: true,
-      },
+      serveUrl, composition, outputLocation: out, scale: SCALE, overwrite: true,
       codec: transparent ? 'prores' : 'h264',
       proResProfile: transparent ? '4444' : undefined,
       pixelFormat: transparent ? 'yuva444p10le' : 'yuv420p',
